@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RSVP - Serty's 60th</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1>🎉 Serty’s 60th</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="rsvp.html">RSVP</a></li>
+          <li><a href="hotel.html">Hotel Booking</a></li>
+          <li><a href="details.html">Event Details</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="content-section">
+    <div class="container">
+      <h2>RSVP Now</h2>
+      <form id="rsvpForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="guests"># of Guests:</label>
+        <input type="number" id="guests" name="guests" min="1" value="1" required />
+
+        <label for="contact">Email or Phone:</label>
+        <input type="text" id="contact" name="contact" required />
+
+        <label for="dietary">Dietary Preferences (Optional):</label>
+        <textarea id="dietary" name="dietary" rows="3"></textarea>
+
+        <button type="submit">Confirm Attendance</button>
+        <p id="successMessage" class="hidden">Thank you for your RSVP!</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container text-center">
+      <p>&copy; 2026 Serty’s 60th Birthday Bash. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
