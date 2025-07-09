@@ -23,26 +23,22 @@
   </header>
 
   <section class="content-section">
-    <div class="container">
-      <h2>RSVP Now</h2>
-      <form id="rsvpForm">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required />
+  <div class="container">
+    <h2>RSVP Now</h2>
+    <p>Please complete the form below to confirm your attendance:</p>
 
-        <label for="guests"># of Guests:</label>
-        <input type="number" id="guests" name="guests" min="1" value="1" required />
-
-        <label for="contact">Email or Phone:</label>
-        <input type="text" id="contact" name="contact" required />
-
-        <label for="dietary">Dietary Preferences (Optional):</label>
-        <textarea id="dietary" name="dietary" rows="3"></textarea>
-
-        <button type="submit">Confirm Attendance</button>
-        <p id="successMessage" class="hidden">Thank you for your RSVP!</p>
-      </form>
-    </div>
-  </section>
+    <!-- Embedded Google Form -->
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLScRGpVif8U0GqwM-UqiCg-L8WmRZhb8qp0Y1_JiPBBpxmkFYA/viewform?embedded=true" 
+      width="100%" 
+      height="600" 
+      frameborder="0" 
+      marginheight="0" 
+      marginwidth="0">
+      Loading…
+    </iframe>
+  </div>
+</section>
 
   <footer>
     <div class="container text-center">
